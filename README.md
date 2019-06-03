@@ -2,7 +2,7 @@
 
 Simple website to ease generating a UUID.
 
-The project uses [Dinatra][0] for templating and serving requests.
+The project uses [Dinatra][0] for serving the requests.
 For the UUID generation I am using [deno-uuid][1].
 
 ## Layout
