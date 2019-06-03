@@ -41,7 +41,7 @@ let renderPage = async () => {
   </div>
 </body>
 `;
-  return await render(template, { id: uuid() });
+  return await render(template, { id: `${uuid()}` });
 }
 
 app(
@@ -50,6 +50,6 @@ app(
   get('/json', () => [
     200,
     contentType('json'),
-    JSON.stringify({ uuid: uuid() }),
+    JSON.stringify({ uuid: `${uuid()}` }),
   ])
 );
