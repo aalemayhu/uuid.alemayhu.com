@@ -1,7 +1,10 @@
-import { app, get, contentType, } from 'https://denopkg.com/syumai/dinatra/mod.ts';
-import { render } from 'https://deno.land/x/dejs/dejs.ts';
+import {
+  app,
+  get,
+  contentType
+} from "https://denopkg.com/syumai/dinatra/mod.ts";
+import { render } from "https://deno.land/x/dejs/dejs.ts";
 import { uuid } from "https://deno.land/x/uuid/mod.ts";
-
 
 let renderPage = async () => {
   const template = `
@@ -42,14 +45,14 @@ let renderPage = async () => {
 </body>
 `;
   return await render(template, { id: uuid() });
-}
+};
 
 app(
-  get('/*', () => [500, 'an error has occured']),
-  get('/', renderPage),
-  get('/json', () => [
+  get("/*", () => [500, "an error has occured"]),
+  get("/", renderPage),
+  get("/json", () => [
     200,
-    contentType('json'),
-    JSON.stringify({ uuid: uuid() }),
+    contentType("json"),
+    JSON.stringify({ uuid: uuid() })
   ])
 );
