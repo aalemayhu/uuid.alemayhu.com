@@ -36,6 +36,7 @@ let renderPage = async () => {
   <p><a href="/json">JSON</a></p>
   <p>
    This page is being served by the Dinatra web framework from <a href="https://github.com/syumai/dinatra">syumai/dinatra</a><br>
+   and the UUID is added to the page via <a href="https://github.com/syumai/dejs">dejs</a>.
    The UUID's are generated via <a href="https://github.com/lucascaro/deno-uuid">lucascaro/deno-uuid</a>
   </p>
   <p>
