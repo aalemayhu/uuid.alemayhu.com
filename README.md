@@ -4,7 +4,7 @@ Simple website to ease generating a UUID.
 
 The project uses [Dinatra][0] for serving requests and [dejs][2] for the
 templating. For the UUID generation I am using [deno-uuid][1]. The styling
-is from [Bulma].
+is from [Bulma][3].
 
 ## Layout
 
