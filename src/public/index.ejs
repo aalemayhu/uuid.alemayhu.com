@@ -15,19 +15,25 @@
   </head>
 
   <body>
-    <section class="columns is-desktop is-vcentered">
-      <div class="container">
-        <div class="column">
-          <% if (id) { %>
-          <h1 class="title is-1"><%= id %></h1>
-          <% } %>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">UUID generator</h1>
+        <% if (id) { %>
+                <h2 class="title has-text-centered"><%= id %></h1>
+        <% } %>
         </div>
+    </section>
+    <section class="columns is-desktop is-vcentered">
+      <div class="container has-text-centered">
+        <div class="column">
             <a class="button" href="/json">JSON</a>
             <a class="button" href="https://github.com/scanf/uuid.alemayhu.com"
               >Source</a
             >
-        </div>
       </div>
+        <div class="content has-text-centered">
+            A <a href="https://github.com/scanf">scanf</a> project
+        </div>
     </section>
   </body>
 </html>
